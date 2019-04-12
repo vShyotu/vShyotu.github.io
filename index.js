@@ -3,34 +3,48 @@ createGameDevSkillsSection();
 createArtistSkillsSection();
 onStart();
 
+var webdevRoleElement = $("#webdev-role");
+var gameDevRoleElement = $("#gamedev-role");
+var artistRoleElement = $("#artist-role");
 
 function onStart()
 {
-    $("#webdev-role").hide();
-    $("#gamedev-role").hide();
-    $("#artist-role").hide();
+    webdevRoleElement.hide();
+    gameDevRoleElement.hide();
+    artistRoleElement.hide();
+    // This could be done on one line,
+    // like $('#gamedev-role, #artist-role').hide(),
+    // but you'd want to cache that call too.
 }
 
 function showWebDevRole() {
-    $("#webdev-role").slideDown();
-    $("#gamedev-role").hide();
-    $("#artist-role").hide();
+    webdevRoleElement.slideDown();
+    gameDevRoleElement.hide();
+    artistRoleElement.hide();
 }
 
 function showGameDevRole() {
-    $("#webdev-role").hide();
-    $("#gamedev-role").slideDown();
-    $("#artist-role").hide();
+    webdevRoleElement.hide();
+    gameDevRoleElement.slideDown();
+    artistRoleElement.hide();
 }
 
 function showArtistRole() {
-    $("#webdev-role").hide();
-    $("#gamedev-role").hide();
-    $("#artist-role").slideDown();
+    webdevRoleElement.hide();
+    gameDevRoleElement.hide();
+    artistRoleElement.slideDown();
 }
 
+// Consider this. You're doing the same thing multiple times here.
+// What you might want to think about is, having _everything_ close
+// at once, then pass in an item you want to reveal.
+// function revealRole(role) {
+  // $('.class-they-all-share').hide();
+  // $(role).slideDown();
+// }
 
-function createWebDevSkillsSection() 
+
+function createWebDevSkillsSection()
 {
     var webDevSkillsHtml = "";
 
@@ -87,7 +101,7 @@ function createGameDevSkillsSection()
 }
 
 function createArtistSkillsSection()
-{    
+{
     var artistToolSkills = [
         {label:"Photoshop", percent: 80},
         {label:"Krita", percent: 90},
