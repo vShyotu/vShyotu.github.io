@@ -51,8 +51,16 @@ function showArtistRole() {
     artistRoleBtnElement.removeClass().addClass("role-active");
 }
 
+// Consider this. You're doing the same thing multiple times here.
+// What you might want to think about is, having _everything_ close
+// at once, then pass in an item you want to reveal.
+// function revealRole(role) {
+  // $('.class-they-all-share').hide();
+  // $(role).slideDown();
+// }
 
-function createWebDevSkillsSection() 
+
+function createWebDevSkillsSection()
 {
     var webDevSkillsHtml = "";
 
@@ -60,7 +68,7 @@ function createWebDevSkillsSection()
         {label:"HTML", percent: 80},
         {label:"CSS", percent: 70},
         {label:"JS", percent: 50},
-        {label:"JQuery", percent: 30},
+        {label:"jQuery", percent: 30},
         {label:"React", percent: 30},
     ];
 
@@ -109,7 +117,7 @@ function createGameDevSkillsSection()
 }
 
 function createArtistSkillsSection()
-{    
+{
     var artistToolSkills = [
         {label:"Photoshop", percent: 80},
         {label:"Krita", percent: 90},
