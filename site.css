@@ -57,6 +57,14 @@ nav .dividing-line {
     background-color: #0C7489;
 }
 
+/* About */
+
+.rounded-img
+{
+    border-radius: 50%;
+    width: 10%;
+}
+
 .profile {
     text-align: center;
     font-weight: normal;
