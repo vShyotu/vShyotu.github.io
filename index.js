@@ -1,38 +1,54 @@
+var webdevRoleElement = $("#webdev-role");
+var gamedevRoleElement = $("#gamedev-role");
+var artistRoleElement = $("#artist-role");
+var webdevRoleBtnElement = $("#webdev-role-btn");
+var gamedevRoleBtnElement = $("#gamedev-role-btn");
+var artistRoleBtnElement = $("#artist-role-btn");
+
 createWebDevSkillsSection();
 createGameDevSkillsSection();
 createArtistSkillsSection();
 onStart();
 
-var webdevRoleElement = $("#webdev-role");
-var gameDevRoleElement = $("#gamedev-role");
-var artistRoleElement = $("#artist-role");
-
 function onStart()
 {
     webdevRoleElement.hide();
-    gameDevRoleElement.hide();
+    gamedevRoleElement.hide();
     artistRoleElement.hide();
-    // This could be done on one line,
-    // like $('#gamedev-role, #artist-role').hide(),
-    // but you'd want to cache that call too.
+
+    webdevRoleBtnElement.removeClass().addClass("role-inactive");
+    gamedevRoleBtnElement.removeClass().addClass("role-inactive");
+    artistRoleBtnElement.removeClass().addClass("role-inactive");
 }
 
 function showWebDevRole() {
     webdevRoleElement.slideDown();
-    gameDevRoleElement.hide();
+    gamedevRoleElement.hide();
     artistRoleElement.hide();
+    
+    webdevRoleBtnElement.removeClass().addClass("role-active");
+    gamedevRoleBtnElement.removeClass().addClass("role-inactive");
+    artistRoleBtnElement.removeClass().addClass("role-inactive");
 }
 
 function showGameDevRole() {
     webdevRoleElement.hide();
-    gameDevRoleElement.slideDown();
+    gamedevRoleElement.slideDown();
     artistRoleElement.hide();
+    
+    webdevRoleBtnElement.removeClass().addClass("role-inactive");
+    gamedevRoleBtnElement.removeClass().addClass("role-active");
+    artistRoleBtnElement.removeClass().addClass("role-inactive");
 }
 
 function showArtistRole() {
     webdevRoleElement.hide();
-    gameDevRoleElement.hide();
+    gamedevRoleElement.hide();
     artistRoleElement.slideDown();
+    
+    webdevRoleBtnElement.removeClass().addClass("role-inactive");
+    gamedevRoleBtnElement.removeClass().addClass("role-inactive");
+    artistRoleBtnElement.removeClass().addClass("role-active");
 }
 
 // Consider this. You're doing the same thing multiple times here.
@@ -119,7 +135,7 @@ function createArtistSkillsSection()
 
 function createSkillsSection(title, skills)
 {
-    var sectionHtml = "<h1>" + title + "</h1>";
+    var sectionHtml = "<h3>" + title + "</h3>";
 
     for (var i = 0; i < skills.length; i++)
     {
