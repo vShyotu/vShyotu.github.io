@@ -52,7 +52,7 @@ function createWebDevSkillsSection()
         {label:"HTML", percent: 80},
         {label:"CSS", percent: 70},
         {label:"JS", percent: 50},
-        {label:"JQuery", percent: 30},
+        {label:"jQuery", percent: 30},
         {label:"React", percent: 30},
     ];
 
