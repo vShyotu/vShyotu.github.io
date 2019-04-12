@@ -1,32 +1,54 @@
+var webdevRoleElement = $("#webdev-role");
+var gamedevRoleElement = $("#gamedev-role");
+var artistRoleElement = $("#artist-role");
+var webdevRoleBtnElement = $("#webdev-role-btn");
+var gamedevRoleBtnElement = $("#gamedev-role-btn");
+var artistRoleBtnElement = $("#artist-role-btn");
+
 createWebDevSkillsSection();
 createGameDevSkillsSection();
 createArtistSkillsSection();
 onStart();
 
-
 function onStart()
 {
-    $("#webdev-role").hide();
-    $("#gamedev-role").hide();
-    $("#artist-role").hide();
+    webdevRoleElement.hide();
+    gamedevRoleElement.hide();
+    artistRoleElement.hide();
+
+    webdevRoleBtnElement.removeClass().addClass("role-inactive");
+    gamedevRoleBtnElement.removeClass().addClass("role-inactive");
+    artistRoleBtnElement.removeClass().addClass("role-inactive");
 }
 
 function showWebDevRole() {
-    $("#webdev-role").slideDown();
-    $("#gamedev-role").hide();
-    $("#artist-role").hide();
+    webdevRoleElement.slideDown();
+    gamedevRoleElement.hide();
+    artistRoleElement.hide();
+    
+    webdevRoleBtnElement.removeClass().addClass("role-active");
+    gamedevRoleBtnElement.removeClass().addClass("role-inactive");
+    artistRoleBtnElement.removeClass().addClass("role-inactive");
 }
 
 function showGameDevRole() {
-    $("#webdev-role").hide();
-    $("#gamedev-role").slideDown();
-    $("#artist-role").hide();
+    webdevRoleElement.hide();
+    gamedevRoleElement.slideDown();
+    artistRoleElement.hide();
+    
+    webdevRoleBtnElement.removeClass().addClass("role-inactive");
+    gamedevRoleBtnElement.removeClass().addClass("role-active");
+    artistRoleBtnElement.removeClass().addClass("role-inactive");
 }
 
 function showArtistRole() {
-    $("#webdev-role").hide();
-    $("#gamedev-role").hide();
-    $("#artist-role").slideDown();
+    webdevRoleElement.hide();
+    gamedevRoleElement.hide();
+    artistRoleElement.slideDown();
+    
+    webdevRoleBtnElement.removeClass().addClass("role-inactive");
+    gamedevRoleBtnElement.removeClass().addClass("role-inactive");
+    artistRoleBtnElement.removeClass().addClass("role-active");
 }
 
 
@@ -105,7 +127,7 @@ function createArtistSkillsSection()
 
 function createSkillsSection(title, skills)
 {
-    var sectionHtml = "<h1>" + title + "</h1>";
+    var sectionHtml = "<h3>" + title + "</h3>";
 
     for (var i = 0; i < skills.length; i++)
     {
