@@ -8,72 +8,64 @@
     </head>
 
     <body>
-        
         <nav>
 
             <div class="nav-link-wrap">
-
                 <ul>
-
-                    <li class="active"><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Projects</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
-
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
-
             </div>
 
             <div class="dividing-line"></div>
 
         </nav>
 
-        <section>
-
+        <section id="About">
             <div class="profile">
 
-                <h1>Hello, I'm Grant Hardman.</h1>
+                <h1>About</h1>
                 
-                <h1>I am a..</h1>
+                <h2>Profile</h2>
+
+                <p>Hello, I'm <b>Grant Hardman.</b></p>
+                <p>I am a..</p>
             
                 <div class="roles-nav">
-
-                    <span class="role-active" onclick="showWebDevRole()">Web Developer</span>
-                    <span class="role-inactive" onclick= "showGameDevRole()">Games Developer</span>
-                    <span class="role-inactive" onclick="showArtistRole()">Game Artist</span>
-
+                    <span id="webdev-role-btn" onclick="showWebDevRole()">Web Developer</span>
+                    <span id="gamedev-role-btn" onclick= "showGameDevRole()">Games Developer</span>
+                    <span id="artist-role-btn"  onclick="showArtistRole()">Game Artist</span>
                 </div>
 
             </div>
 
             <div class="role-info-container" id="webdev-role">
 
-                <h1>My Stack & Skills</h1>
-
+                <h2>My Stack & Skills</h2>
                 <div class="skillbar-container" id="webdev-skill-container"></div>
 
             </div>
 
             <div class="role-info-container" id="gamedev-role">
-
-                <h1>My Game Dev Knowledge</h1>
-
+            
+                <h2>My Game Dev Knowledge</h2>
                 <div class="skillbar-container" id="gamedev-skill-container"></div>
 
             </div>
 
             <div class="role-info-container" id="artist-role">
 
-                <h1>My Art Knowledge</h1>
-                
+                <h2>My Art Knowledge</h2>
                 <div class="skillbar-container" id="artist-skill-container"></div>
 
             </div>
 
             <div class="centered">
 
-                <h1>My Journey & Experience</h1>
+                <h2>My Journey & Experience</h2>
 
             </div>
 
@@ -82,22 +74,18 @@
                 Timeline in here
 
             </div>
-
         </section>
 
-        <section>
-
+        <section id="Projects">
             <div class="centered">
 
                 <h1>Projects</h1>
 
                 <div class="roles-nav">
-
                     <span class="role-active">All</span>
                     <span class="role-inactive">Web Development</span>
                     <span class="role-inactive">Games Development</span>
                     <span class="role-inactive">Game Artwork</span>
-
                 </div>
 
             </div>
@@ -105,18 +93,14 @@
             <div class="role-info-container">
 
                 <div class="tile-container">
-
                     <div class="tile-grid">
-
                         <div class="tile"></div>
                         <div class="tile"></div>
                         <div class="tile"></div>
                         <div class="tile"></div>
                         <div class="tile"></div>
                         <div class="tile"></div>
-
                     </div>
-
                 </div>
                 
                 <a class="role-inactive" href="projects.html">All Projects ></a>
@@ -131,12 +115,10 @@
 
         </section>
 
-        <section>
-
+        <section id="Blog">
             <div class="role-info-container">
 
                 <div class="tile-container">
-
                     <div class="tile-grid">
 
                         <div class="tile"></div>
@@ -144,27 +126,20 @@
                         <div class="tile"></div>
 
                     </div>
-                    
                 </div>
 
                 <a class="role-inactive" href="blog.html">All Entries ></a>
 
             </div>
-
         </section>
 
-        <section>
-
+        <section id="Contact">
             <div class="centered">
-
                 <h1>Contact</h1>
-
             </div>
 
             <div class="role-info-container">
-
                 Form here
-
             </div>
 
         </section>

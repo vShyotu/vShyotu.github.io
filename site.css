@@ -1,4 +1,4 @@
-/*{box-sizing:border-box;}*/
+/* Body */
 
 body {
     background-color: #fefefe;
@@ -7,42 +7,46 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* Nav Bar */
 nav {
     background-color: #040404;
     position: sticky;
     top: 0;
 }
 
-.centered
-{
-    text-align: center;
-}
-
-.tile-container {
-    margin:0;
-    display: flex;
-    justify-content: center;
-}
-
-.tile-grid {
-    width:60%;
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.tile {
-    width:300px;
-    height:200px;
-    background-color: white;
-    margin: 10px;
-    box-shadow: 0px 4px 3px rgba(141, 141, 141, 0.75);
-}
-
 nav div ul
 {
     margin: 0px;
     padding: 0px;
+}
+
+nav div ul li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav div ul li a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav div ul li a:hover {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #0C7489;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav div ul li .active {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #0C7489;
+    text-align: center;
+    text-decoration: none;
 }
 
 nav .dividing-line {
@@ -53,48 +57,14 @@ nav .dividing-line {
     background-color: #0C7489;
 }
 
-nav div ul li:hover {
-    color: #0C7489;
-    transition: color 0.3s;
-    cursor: pointer;
-}
-
-nav div ul li {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: none;
-    border-radius:5px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-    transition: color 0.3s;
-}
-
-nav div ul .active {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: none;
-    border-radius:5px;
-    color: #119DA4;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
 .profile {
     text-align: center;
     font-weight: normal;
 }
 
 
-.role-info-container h1 {
+.role-info-container h2 {
     font-family: 'Source Sans Pro', sans-serif;
-    color: white;
     text-align: center;
 }
 
@@ -238,5 +208,31 @@ nav div ul .active {
 .p100 { 
     width: 100%; 
     background-color: #119DA4
+}
+
+.centered
+{
+    text-align: center;
+}
+
+.tile-container {
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+
+.tile-grid {
+    width:60%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width:300px;
+    height:200px;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 0px 4px 3px rgba(141, 141, 141, 0.75);
 }
 
