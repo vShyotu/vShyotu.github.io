@@ -25,7 +25,7 @@ function showWebDevRole() {
     webdevRoleElement.slideDown();
     gamedevRoleElement.hide();
     artistRoleElement.hide();
-    
+
     webdevRoleBtnElement.removeClass().addClass("role-active");
     gamedevRoleBtnElement.removeClass().addClass("role-inactive");
     artistRoleBtnElement.removeClass().addClass("role-inactive");
@@ -35,7 +35,7 @@ function showGameDevRole() {
     webdevRoleElement.hide();
     gamedevRoleElement.slideDown();
     artistRoleElement.hide();
-    
+
     webdevRoleBtnElement.removeClass().addClass("role-inactive");
     gamedevRoleBtnElement.removeClass().addClass("role-active");
     artistRoleBtnElement.removeClass().addClass("role-inactive");
@@ -45,7 +45,7 @@ function showArtistRole() {
     webdevRoleElement.hide();
     gamedevRoleElement.hide();
     artistRoleElement.slideDown();
-    
+
     webdevRoleBtnElement.removeClass().addClass("role-inactive");
     gamedevRoleBtnElement.removeClass().addClass("role-inactive");
     artistRoleBtnElement.removeClass().addClass("role-active");
@@ -145,7 +145,7 @@ function createSkillsSection(title, skills)
         <span class="gauge-label">` + skills[i].label + `</span>
 
             <div class="gauge">
-                <div class="gauge-fill p` + skills[i].percent + `"></div>
+                <div class="gauge-fill p p` + skills[i].percent + `"></div>
             </div>
 
         </div>`;

@@ -76,8 +76,7 @@ nav .dividing-line {
 
 .role-active {
     display: inline-block;
-    padding: 10px 30px;
-    background-color: #119DA4;
+    padding: 10px 30px;;
     border: none;
     border-radius:5px;
     color: white;
@@ -160,54 +159,48 @@ nav .dividing-line {
   border-radius: 0px 3px 3px 0px;
 }
 
-.p10 { 
-    width: 10%; 
+.p {
     background-color: #119DA4
 }
 
-.p20 { 
-    width: 20%; 
-    background-color: #119DA4
+.p10 {
+    width: 10%;
 }
 
-.p30 { 
-    width: 30%; 
-    background-color: #119DA4
+.p20 {
+    width: 20%;
 }
 
-.p40 { 
-    width: 40%; 
-    background-color: #119DA4
+.p30 {
+    width: 30%;
 }
 
-.p50 { 
-    width: 50%; 
-    background-color: #119DA4
+.p40 {
+    width: 40%;
 }
 
-.p60 { 
-    width: 60%; 
-    background-color: #119DA4
+.p50 {
+    width: 50%;
 }
 
-.p70 { 
-    width: 70%; 
-    background-color: #119DA4
+.p60 {
+    width: 60%;
 }
 
-.p80 { 
-    width: 80%; 
-    background-color: #119DA4
+.p70 {
+    width: 70%;
 }
 
-.p90 { 
-    width: 90%; 
-    background-color: #119DA4
+.p80 {
+    width: 80%;
 }
 
-.p100 { 
-    width: 100%; 
-    background-color: #119DA4
+.p90 {
+    width: 90%;
+}
+
+.p100 {
+    width: 100%;
 }
 
 .centered
@@ -235,4 +228,3 @@ nav .dividing-line {
     margin: 10px;
     box-shadow: 0px 4px 3px rgba(141, 141, 141, 0.75);
 }
-
