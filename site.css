@@ -76,7 +76,7 @@ nav .dividing-line {
 
 .role-active {
     display: inline-block;
-    padding: 10px 30px;;
+    padding: 10px 30px;
     border: none;
     border-radius: 5px;
     color: white;
@@ -136,7 +136,7 @@ nav .dividing-line {
     width: 15%;
     text-align: right;
     line-height: 30px;
-    padding: auto 10px auto auto;
+    padding: 0 10px 0 0;
     border-radius: 3px 0 0 3px;
     background-color: #5e5e58;
     font-size: 15px;
