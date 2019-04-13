@@ -2,8 +2,8 @@
 
 body {
     background-color: #fefefe;
-    padding:0px;
-    margin:0px;
+    padding: 0;
+    margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -16,8 +16,8 @@ nav {
 
 nav div ul
 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 nav div ul li {
@@ -31,7 +31,7 @@ nav div ul li a {
     color: white;
     text-align: center;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s ease-in-out;
 }
 
 nav div ul li a:hover {
@@ -50,10 +50,10 @@ nav div ul li .active {
 }
 
 nav .dividing-line {
-    margin:0px;
-    padding:0px;
-    width:100%;
-    height:3px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 3px;
     background-color: #0C7489;
 }
 
@@ -69,23 +69,23 @@ nav .dividing-line {
 }
 
 .roles-nav {
-    margin:auto;
-    padding:10px;
-    text-align:center;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
 }
 
 .role-active {
     display: inline-block;
     padding: 10px 30px;;
     border: none;
-    border-radius:5px;
+    border-radius: 5px;
     color: white;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     cursor: default;
-    transition: color 0.3s;
+    transition: color 0.3s ease-in-out;
 }
 
 .role-inactive {
@@ -111,35 +111,33 @@ nav .dividing-line {
 
 .role-info-container {
     width: 100%;
-    margin: 0px;
-    padding: 10px 0px 10px 0px;
+    margin: 0;
+    padding: 10px 0 10px 0;
     background-color: #b6b6b1;
-    box-shadow: inset 0px 4px 3px rgba(141, 141, 141, 0.75), inset 0px -1px 3px rgba(141, 141, 141, 0.75);
+    box-shadow: inset 0 4px 3px rgba(141, 141, 141, 0.75), inset 0 -1px 3px rgba(141, 141, 141, 0.75);
 }
 
 .skillbar-container
 {
-    width:40%;
-    margin:auto;
+    width: 40%;
+    margin: auto;
     padding: 20px;
 }
 
 .gauge-container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5px auto auto;
     display:flex;
     box-sizing: border-box;
-    margin-top: 5px;
 }
 
 .gauge-label {
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
-    width:15%;
+    width: 15%;
     text-align: right;
     line-height: 30px;
-    padding-right: 10px;
-    border-radius: 3px 0px 0px 3px;
+    padding: auto 10px auto auto;
+    border-radius: 3px 0 0 3px;
     background-color: #5e5e58;
     font-size: 15px;
 }
@@ -148,7 +146,7 @@ nav .dividing-line {
     width:85%;
     background-color: #ddd;
     box-sizing: border-box;
-    border-radius: 0px 3px 3px 0px;
+    border-radius: 0 3px 3px 0;
 }
 
 .gauge-fill {
@@ -156,7 +154,7 @@ nav .dividing-line {
   padding: 15px;
   color: #fff;
   box-sizing: border-box;
-  border-radius: 0px 3px 3px 0px;
+  border-radius: 0 3px 3px 0;
 }
 
 .p {
@@ -209,22 +207,22 @@ nav .dividing-line {
 }
 
 .tile-container {
-    margin:0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 .tile-grid {
-    width:60%;
-    display:flex;
+    width: 60%;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .tile {
-    width:300px;
-    height:200px;
+    width: 300px;
+    height: 200px;
     background-color: white;
     margin: 10px;
-    box-shadow: 0px 4px 3px rgba(141, 141, 141, 0.75);
+    box-shadow: 0 4px 3px rgba(141, 141, 141, 0.75);
 }
