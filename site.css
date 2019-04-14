@@ -74,7 +74,7 @@ nav .dividing-line {
 
 .rounded-img
 {
-    border-radius: 50%;
+    border-radius: 5px;
     max-width: 100%;
     max-height: 100%;
 }
@@ -88,19 +88,23 @@ nav .dividing-line {
     margin: auto;
     width:50%;
     display:flex;
-    align-items: center;
+    border-radius: 5px;
+    background-color: #b6b6b1;
 }
 
 .profile-img-container {
-    width: 20%;
+    flex-grow: 1;
     padding:10px;
 }
 
 .bio-container {
     padding: 10px;
-    width: 80%;
-    height: 100%;
+    margin: 10px;
+    border-radius:5px;
+    background-color:white;
+    flex-grow:1;
 }
+
 
 /* .bio-container p
 {
@@ -196,6 +200,14 @@ nav .dividing-line {
     font-size: 15px;
 }
 
+.role-info-container {
+    width: 100%;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    background-color: #b6b6b1;
+    box-shadow: inset 0px 4px 3px rgba(141, 141, 141, 0.75), inset 0px -1px 3px rgba(141, 141, 141, 0.75);
+}
+
 .role-info-container .content h2
 {
     text-align: left;
@@ -207,11 +219,12 @@ nav .dividing-line {
     color: #0C7489;
 }
 
-
-
 .role-info-container h2 {
-    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
+}
+
+.role-info-container div p {
+    text-align: left;
 }
 
 .roles-nav {
@@ -256,13 +269,7 @@ nav .dividing-line {
     transition: background-color 0.3s;
 }
 
-.role-info-container {
-    width: 100%;
-    margin: 0px;
-    padding: 10px 0px 10px 0px;
-    background-color: #b6b6b1;
-    box-shadow: inset 0px 4px 3px rgba(141, 141, 141, 0.75), inset 0px -1px 3px rgba(141, 141, 141, 0.75);
-}
+
 
 .skillbar-container
 {
