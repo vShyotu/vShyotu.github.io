@@ -1,5 +1,10 @@
 /* Body */
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -79,6 +84,12 @@ nav .dividing-line {
     max-height: 100%;
 }
 
+.screenshot
+{
+    border-radius:5px;
+    margin:10px;
+}
+
 .profile {
     text-align: center;
     font-weight: normal;
@@ -105,6 +116,35 @@ nav .dividing-line {
     flex-grow:1;
 }
 
+.project-badge {
+    border-radius:3px;
+    color:white;
+    padding: 3px 5px;
+}
+
+.project-badge.active {
+    background-color:green;
+}
+
+.project-badge.active::after {
+    content: "Active";
+}
+
+.project-badge.inactive {
+    background-color:rgb(233, 159, 0);
+}
+
+.project-badge.inactive::after {
+    content: "Inactive";
+}
+
+.project-badge.stopped {
+    background-color:red;
+}
+
+.project-badge.stopped::after {
+    content: "Stopped";
+}
 
 /* .bio-container p
 {
