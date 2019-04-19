@@ -2,306 +2,216 @@
 <html lang="en">
 
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grant Hardman - Portfolio</title>
+    <link href="fonts.css" rel="stylesheet" type="text/css">
+    <link href="site.css" rel="stylesheet" type="text/css">
+  </head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <body>
+    <nav>
+      <div class="nav-link-wrap">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="dividing-line"></div>
+    </nav>
 
-        <title>Grant Hardman - Home</title>
-
-        <link href="fonts.css" rel="stylesheet" type="text/css">
-        <link href="site.css" rel="stylesheet" type="text/css">
-
-    </head>
-
-    <body>
-        <nav>
-
-            <div class="nav-link-wrap">
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Blog">Blog</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
+    <section id="About">
+      <div class="centered">
+        <h1>About</h1>
+        <div class="title-divider"></div>
+        <div class="profile-img-container">
+          <img class="rounded-img" src="https://www.w3schools.com/howto/img_avatar.png">
+        </div>
+        <table class="simple-table">
+          <tr>
+            <td><b>Name:</b></td>
+            <td>Grant Hardman</td>
+          </tr>
+          <tr>
+            <td><b>Location:</b></td>
+            <td>Manchester, UK</td>
+          </tr>
+          <tr>
+            <td><b>Status:</b></td>
+            <td>Upskilling whilst seeking employment.</td>
+          </tr>
+          <tr>
+            <td><b>Github: </b></td>
+            <td><a href="https://github.com/vShyotu">https://github.com/vShyotu</a></td>
+          </tr>
+          <tr>
+            <td><b>Twitter: </b></td>
+            <td><a href="https://twitter.com/Shyotu">@Shyotu</a></td>
+          </tr>
+          <tr>
+            <td><b>Email:</b></td>
+            <td><a href="mailto:grant.r.hardman@outlook.com">Link</a></td>
+          </tr>
+        </table>
+        <h2>My Roles</h2>
+        <div class="title-divider"></div>
+        <span class="btn role-btn" id="webdev-role-btn">Junior Web Developer</span>
+        <span class="btn role-btn" id="gamedev-role-btn">Games Developer</span>
+        <span class="btn role-btn" id="artist-role-btn">Game Artist</span>
+      </div>
+      <div class="inset-container role-info-container" id="webdev-role">
+        <h2>Intro</h2>
+        <div class="title-divider"></div>
+        <div style="width:40%; margin:auto; text-align:left; padding-top:10px">
+          <p>Full-stack Web Development is a relatively new field to me, but fits as a useful natural progression of my C++/C# background and skill set. Front-end work with html, css and js was something that I took a keen interest in in my teens and I have since revisited it. </p>
+          <p>I'm currently working on developing my skills and would love the opportunity to work and grow in this field. I'm current looking for <b>Junior roles</b> preferably with training or CPD schemes in place. I'm keen to develop and hopefully become a valued member in your team!</p>
+        </div>
+        <h2>My Stack &amp; Skills</h2>
+        <div class="title-divider"></div>
+        <div style="width:40%; margin:auto; text-align:left; padding-top:10px">
+          <p>Here is my stack and how my skills compare to each other:</p>
+        </div>
+        <div class="skillbar-container" id="webdev-skill-container"></div>
+        <div class="arrow-up collapse-role"></div>
+        <div class="centered">Collapse</div>
+      </div>
+      <div class="inset-container role-info-container" id="gamedev-role">
+        <h2>Intro</h2>
+        <div class="title-divider"></div>
+        <div style="width:40%; margin:auto; text-align:left; padding-top:10px">
+          <p> Making games is one of the main reasons I became a software developer in the first place. Ever since being a child I have always enjoyed playing games, but as I've grown up it has become so much more than that. </p>
+          <p> I always tend to gravitate towards the sandbox genre. The reason for this, I found, is intrinsically linked to my desire to create. Playing games just wasn't enough for me. I got so much more enjoyment out of building experiences for other people within the confines of these games, that one day I just turned around and said, "Why don't <b>I</b> just make a game?" </p>
+          <p> I have spent the past few years teaching myself to program and building games and I'm now looking for work in the industry. </p>
+        </div>
+        <h2>Tech &amp; Skill Areas</h2>
+        <div class="title-divider"></div>
+        <div class="skillbar-container" id="gamedev-skill-container"></div>
+        <div class="arrow-up collapse-role"></div>
+        <div class="centered">Collapse</div>
+      </div>
+      <div class="inset-container role-info-container" id="artist-role">
+        <h2>Art Skills</h2>
+        <div class="title-divider"></div>
+        <div class="skillbar-container" id="artist-skill-container"></div>
+        <div class="arrow-up collapse-role"></div>
+        <div class="centered">Collapse</div>
+      </div>
+      <div class="centered">
+        <h2>My Story &amp; Experience</h2>
+      </div>
+      <div class="title-divider"></div>
+      <p class="centered">Click me!</p>
+      <div class="arrow-down black" id="timeline-toggle-arrow" onclick=toggleTimeline()></div>
+      <div class="inset-container" id="timeline-section">
+        <div class="timeline">
+          <div class="timeline-container left">
+            <div class="content">
+              <h2>August 2012</h2>
+              <h4>Achieved Bachelor of Science (Hons) in Mathematics (2:1) - University of Manchester</h4>
+              <p> In August 2012, I was awarded my Bachelors in Mathematics. Maths was and is one of my favourite academic fields. My love for programming and games development is made strongerby my deep understanding of mathematics and the transferrable skills that it has taught me. </p>
+              <p> Problem solving, analytical thinking and rigour are the cornerstones of maths, and they align perfectly with the problems we face every day in programming. </p>
             </div>
-
-            <div class="dividing-line"></div>
-
-        </nav>
-
-        <section id="About">
-            <div class="profile">
-
-                <h1>About</h1>
-                <div class="title-divider"></div>
-
-                <div class="profile-container">
-
-                  <div class="profile-img-container">
-                    <img class="rounded-img" src="https://www.w3schools.com/howto/img_avatar.png">
-                  </div>
-                  <div class="bio-container">                  
-                    <p>Hello, I'm <b>Grant Hardman.</b> I am a technology enthusiast with a diverse skillset covering a broad range of fields. I am available for work.</p>
-                  </div>
-
-                </div>
-
-                <p>I am a..</p>
-                <div class="roles-nav">
-                    <span id="webdev-role-btn" onclick="showWebDevRole()">Web Developer</span>
-                    <span id="gamedev-role-btn" onclick= "showGameDevRole()">Games Developer</span>
-                    <span id="artist-role-btn"  onclick="showArtistRole()">Game Artist</span>
-                </div>
-
+          </div>
+          <div class="timeline-container right">
+            <div class="content">
+              <h2>August 2014</h2>
+              <h4>Achieved PGCE Secondary Education (Maths) - Manchester Metropolitan University</h4>
+              <p> In August 2014, I was awarded my PGCE with QTS. Going into a teaching career after completing an academic degree like Mathematics felt like a really natural progression. I don't regret the choice of trying out the career, I have always enjoyed learning and teaching and felt like it was almost my duty to pass on my love of the subject to younger generations. </p>
+              <p> Training to teach was one of the most challenging points in my personal development. I was always quite shy and reserved, teaching elevated me and taught me the value of clear and effective communication. It gave me many experiences in how to target specific audiences and tailor their experience to produce top quality results. </p>
             </div>
-
-            <div class="role-info-container" id="webdev-role">
-
-                <h2>My Stack &amp; Skills</h2>
-                <div class="title-divider"></div>
-                <div style="width:40%; margin:auto; text-align:left; padding-top:10px">
-                    <p>
-                        Web Development is a relatively new field to me, but fits as a useful natural
-                        progression of my C++/C# background and skill set. Front-end work with html, css and js 
-                        was something that I took a keen interest in in my teens and have since revisited it.
-                    </p>
-                    <p>
-                        I'm currently working on polishing my existing skills and would love the opportunity
-                        to work and develop in this field. I'm current looking for <b>Junior roles</b>, preferably
-                        with training or CPD schemes in place. I'm keen to develop and hopefully become a 
-                        powerful asset in your team!
-                    </p>
-                </div>
-                
-                <div class="skillbar-container" id="webdev-skill-container"></div>
-
+          </div>
+          <div class="timeline-container left">
+            <div class="content">
+              <h2>August 2014 - September 2015</h2>
+              <h4>Maths Curriculum Tutor</h4>
+              <p> As a curriculum tutor, I continued expanding my teaching career. My role was in both a teaching and support capacity. I taught several classes of all ranges of abilities. I also worked closely with Special Educational Needs (SEN) students. These experiences were a rollercoaster for me and no two days were ever the same. </p>
+              <p> I spent a lot of time developing student and colleague friendly resources. Teaching always demands that you put the students at the centre of everything you do and taught me many transferrable skills about analysis, targetting and building professional working relationships of trust and security. </p>
             </div>
-
-            <div class="role-info-container" id="gamedev-role">
-            
-                <h2>Game Dev Skills</h2>
-                <div class="title-divider"></div>
-                <div class="skillbar-container" id="gamedev-skill-container"></div>
-
+          </div>
+          <div class="timeline-container right">
+            <div class="content">
+              <h2>September 2015 - August 2018</h2>
+              <h4>C++ Game Engine Developer & Game Artist (Personal Project)</h4>
+              <p>In August 2015, I resigned from the curriculum tutor position as I felt that a teaching career was not for me. I took some time to decide on what I wanted to pursue and decided that my passion lied/lies in programming and games development. As I had only amateur experience I decided to invest time in myself to develop my skillset whilst simultaneously acting as a full time carer for my mum. I decided to build my own C++ Game Engine from the ground up as a way to teach myself core skills in programming and games development.</p>
+              <p>Along the way, I taught myself how every facet of game development works. From graphics and shaders to AI and physics. It was the perfect way for me to apply my mathematical background by combining it with a lifelong passion for games.</p>
+              <p>I also took it as an opportunity to pursue my artistic side. I taught myself numerous artistic tools alongside my programming development. I focused mainly on 3D work in blender and texturing using photoshop and krita, but also digital painting and concept art.</p>
+              <p>The game engine is closed-source but I have screenshots and code examples of some of the things that I developed and learnt with this project.</p>
+              <div style="text-align:right">
+                <a href="#">Go to project page ><a>
+              </div>
             </div>
-
-            <div class="role-info-container" id="artist-role">
-
-                <h2>Art Skills</h2>
-                <div class="title-divider"></div>
-                <div class="skillbar-container" id="artist-skill-container"></div>
-
+          </div>
+          <div class="timeline-container left">
+            <div class="content">
+              <h2>September 2018 - Present</h2>
+              <h4>C# Unity Game Developer & Game Artist (Personal Project)</h4>
+              <p>After working on my game engine for a few years, I developed a vast skillset across a broad rangeof game development topics, but unfortunately, whilst my game engine is functional and working I had neglected to build an actual "game" with it (although that was always the idea.) It was at this point that I looked for alternative ways to prototype my game and to test the product idea. It was then when I came across Unity.</p>
+              <p>I fell straight into Unity head-first and have immersed myself in it ever since. Unity came to me naturally, all of the knowledge of how game engines are built from the ground up made it incredibly easy for me to pick it up. I started with some of their simple tutorial projects but I am now working on my planned 3D Action RPG which is currently dubbed - Project Arclight.</p>
+              <p>The game is still in-development but will continue as a hobby project, whilst I seek employment. The project is closed source, so just like the above project, I have included screenshots, code samples and written notes on the topics I have studied.</p>
+              <div style="text-align:right">
+                <a href="#">Go to project page ><a>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="arrow-up" onclick=toggleTimeline()></div>
+        <div class="centered">Collapse</div>
+      </div>
+    </section>
 
-            <div class="centered">
-                <h2>My Story &amp; Experience</h2>
+    <section id="Projects">
+      <div class="centered">
+        <h1>Projects</h1>
+        <div class="title-divider"></div>
+        <div class="centered">
+          <span class="btn active">All</span>
+          <span class="btn">Web Development</span>
+          <span class="btn">Games Development</span>
+          <span class="btn">Game Artwork</span>
+        </div>
+      </div>
+      <div class="inset-container">
+        <div class="tile-container">
+          <div class="tile-grid">
+            <div class="tile">
+              <a href="./projects/quiksort.html" title="Quiksort">
+                <img src="./projects/content/images/Quiksort-Card.png">
+              </a>
             </div>
-            <div class="title-divider"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+          </div>
+        </div>
+        <div style="margin:auto; width:50%; text-align:right; padding:5px">
+          <a class="btn" href="projects.html">All Projects ></a>
+        </div>
+      </div>
+    </section>
+    
+    <section id="Contact">
+      <div class="centered">
+        <h1>Contact</h1>
+        <div class="title-divider"></div>
+      </div>
+      <div class="centered">
+        <span style="margin: 5px 10px;"><a href="mailto:grant.r.hardman@outlook.com"><img src="./images/email-64x64.png"></a></span>
+        <span style="margin: 5px 10px;"><a href="https://github.com/vShyotu"><img src="./images/GitHub-Mark-64px.png"></a></span>
+        <span style="margin: 5px 10px;"><a href="https://twitter.com/Shyotu"><img src="./images/twitter-64.png"></a></span>
+      </div>
+    </section>
 
-            <div class="role-info-container">
+    <footer class="centered">
+        &copy; 2019 - Grant Hardman
+    </footer>
 
-                <div class="timeline">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 
-                    <div class="timeline-container left">
-                        <div class="content">
-                            <h2>August 2012</h2>
-                            <h4>Achieved Bachelor of Science (Hons) in Mathematics (2:1) - University of Manchester</h4>
-                            <p>
-                                    In August 2012, I was awarded my Bachelors in Mathematics. Maths was and is one of my 
-                                    favourite academic fields. My love for programming and games development is made stronger
-                                    by my deep understanding of mathematics and the transferrable skills that it has taught me.
-                            </p>
-                            <p>
-                                    Problem solving, analytical thinking and rigour are the cornerstones of maths, and they
-                                    align perfectly with the problems we face every day in programming.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-container right">
-                        <div class="content">
-                            <h2>August 2014</h2>
-                            <h4>Achieved PGCE Secondary Education (Maths) - Manchester Metropolitan University</h4>
-                            <p>
-                                In August 2014, I was awarded my PGCE with QTS. Going into a teaching career after completing
-                                an academic degree like Mathematics felt like a really natural progression.
-                                I don't regret the choice of trying out the career, I have always enjoyed learning and teaching
-                                and felt like it was almost my duty to pass on my love of the subject to younger generations.
-                            </p>
-                            <p>
-                                Training to teach was one of the most challenging points in my personal development. I was always
-                                quite shy and reserved, teaching elevated me and taught me the value of clear and effective 
-                                communication. It gave me many experiences in how to target specific audiences and tailor 
-                                their experience to produce top quality results.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-container left">
-                        <div class="content">
-                            <h2>August 2014 - September 2015</h2>
-                            <h4>Maths Curriculum Tutor</h4>
-                            <p>
-                                As a curriculum tutor I continued down expanding my teaching career. My role was in both a teaching
-                                and support capacity whilst at the school. I taught several classes of all abilities. I also worked
-                                closely with Special Educational Needs (SEN) students. These experiences were a rollercoaster for me
-                                and no two days were ever the same. 
-                            </p>
-                            <p>
-                                I spent a lot of time developing student and colleague friendly resources. Teaching always demands
-                                that you put the students at the centre of everything you do and taught me many transferrable skills
-                                about analysis, targetting and building professional working relationships of trust and security.
-
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-container right">
-                        <div class="content">
-                            <h2>September 2015 - August 2018</h2>
-                            <h4>C++ Game Engine Developer & Game Artist (Personal Project)</h4>
-                            <p>
-                                In August 2015 I resigned from the curriculum tutor position as I felt that a teaching career was not 
-                                for me. I took some time to decide on what I wanted to pursue and decided that my passion lied/lies in 
-                                programming and games development. As I had only amateur experience I decided to invest time in myself 
-                                to develop my skillset whilst simultaneously acting as a full time carer for my mum. I decided to build 
-                                my own C++ Game Engine from the ground up as a way to teach myself core skills in programming and games 
-                                development.
-                            </p>
-                            <p>
-                                Along the way the way I taught myself how every facet of game development works. From graphics and shaders
-                                to AI and physics. It was the perfect way for me to apply my mathematical background by combining it
-                                with a lifelong passion for games.
-                            </p>
-                            <p> 
-                                I also took it as an opportunity to pursue my artistic side. I taught myself numerous artistic tools
-                                alongside my programming development. With a strong focus on 3D work in blender and texturing using
-                                photoshop and krita but also digital painting and concept art.
-                            </p>
-                            <p>
-                                The game engine is closed-source but I have screenshots and code examples of some of the things that I
-                                developed and learnt with this project. 
-                            </p>
-                            <div style="text-align:right">
-                                <a href="#">Go to project page ><a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-container left">
-                        <div class="content">
-                            <h2>September 2018 - Present</h2>
-                            <h4>C# Unity Game Developer & Game Artist (Personal Project)</h4>
-                            <p>
-                                After working on my game engine for a few years, I developed a vast skillset across a broad range
-                                of game development topics, but unfortunately, whilst my game engine is functional and working I had
-                                neglected to build an actual "game" with it (although that was always the idea.) It was at this point 
-                                that I looked for alternative ways to prototype my game and to test the product idea. It was then when
-                                I came across Unity.
-                            </p>
-                            <p>
-                                I fell straight into Unity head-first and have immersed myself in it ever since. Unity came to me naturally,
-                                all of the knowledge of how game engines are built from the ground up made it incredibly easy for me to 
-                                pick it up. I started with some of their simple tutorial projects but I am now working on my planned
-                                3D Action RPG which is currently dubbed - Project Arclight.
-                            </p>
-                            <p>
-                                The game is still in-development but will continue as a hobby project, whilst I seek employment.
-                                The project is closed source, so just like the above project, I have included screenshots, code samples
-                                and written notes on the topics I have studied.
-                            </p>
-                            <div style="text-align:right">
-                                <a href="#">Go to project page ><a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section id="Projects">
-            <div class="centered">
-
-                <h1>Projects</h1>
-                <div class="title-divider"></div>
-
-                <div class="roles-nav">
-                    <span class="role-active">All</span>
-                    <span class="role-inactive">Web Development</span>
-                    <span class="role-inactive">Games Development</span>
-                    <span class="role-inactive">Game Artwork</span>
-                </div>
-
-            </div>
-
-            <div class="role-info-container">
-
-                <div class="tile-container">
-                    <div class="tile-grid">
-                        <div class="tile"><a href="./projects/quiksort.html" title="Quiksort"><img src="./projects/content/images/Quiksort-Card.png"></a></div>
-                        <div class="tile"></div>
-                        <div class="tile"></div>
-                        <div class="tile"></div>
-                        <div class="tile"></div>
-                        <div class="tile"></div>
-                    </div>
-                </div>
-
-                <a class="role-inactive" href="projects.html">All Projects ></a>
-
-            </div>
-
-            <div class="centered">
-
-                <h1>Blog</h1>
-                <div class="title-divider"></div>
-
-            </div>
-
-        </section>
-
-        <section id="Blog">
-            <div class="role-info-container">
-
-                <div class="tile-container">
-                    <div class="tile-grid">
-
-                        <div class="tile"></div>
-                        <div class="tile"></div>
-                        <div class="tile"></div>
-
-                    </div>
-                </div>
-
-                <a class="role-inactive" href="blog.html">All Entries ></a>
-
-            </div>
-        </section>
-
-        <section id="Contact">
-            <div class="centered">
-                <h1>Contact</h1>
-                <div class="title-divider"></div>
-            </div>
-
-            <div class="role-info-container">
-                Form here
-            </div>
-
-        </section>
-
-        <footer>
-
-            &copy; 2019 - Grant Hardman
-
-        </footer>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="index.js"></script>
-
-    </body>
 </html>
