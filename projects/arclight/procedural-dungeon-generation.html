@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Grant Hardman - Procedural Generation Notes</title>
+
+        <link href="../../fonts.css" rel="stylesheet" type="text/css">
+        <link href="../../site.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body style="background-color:#b6b6b1;">
+        <nav>
+
+            <div class="nav-link-wrap">
+                <ul>
+                    <li><a href="../../index.html" class="active">Home</a></li>
+                    <li><a href="../../index.html#About">About</a></li>
+                    <li><a href="../../index.html#Projects">Projects</a></li>
+                    <li><a href="../../index.html#Contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="dividing-line"></div>
+
+        </nav>
+
+        <div style="margin-left:20%; margin-right:20%; margin-top:20px; background-color: white; padding: 5%; box-shadow: 0px 0px 10px #727271">
+            <a href="../../index.html">Home</a> > <a href="../../projects.html">Projects</a> > Arclight > Procedural Dungeon Generation
+      
+            <section id="gameinfo">
+              <h1>Procedural Dungeon Generation Notes</h1>
+      
+              <h2>Contents</h2>
+              <ul style="margin:1em 0">
+                <li>
+                  <a class="contents-link" href="#1"><b>Room Generation</b></a>
+                  <ul style="margin:1em 0">
+                    <li><a class="contents-link" href="#2">Introduction</a></li>
+                    <li><a class="contents-link" href="#3">Space Partitioning &amp; BSPs</a></li>
+                    <li><a class="contents-link" href="#4">Filling the space</a></li>
+                    <li><a class="contents-link" href="#5">Customization in the Editor</a></li>
+                    <li><a class="contents-link" href="#5">Further work</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a class="contents-link" href="#"><b>Wall Generation</b></a>
+                    <ul style="margin:1em 0">
+                      <li><a class="contents-link" href="#">Introduction</a></li>
+                      <li><a class="contents-link" href="#">Method</a></li>
+                      <li><a class="contents-link" href="#">Example</a></li>
+                      <li><a class="contents-link" href="#">Further work</a></li>
+                    </ul>
+                  </li>
+              </ul>
+
+              <h2 id="1">Room Generation</h2>
+              <h3 id="2">Introduction</h3>
+              <p>
+                The first topic to discuss when it comes to dungeon generation is how to generate rooms.
+                The topic comes with a few obstacles but there are ways and means to overcome them. Some of them
+                are explored and developed in these notes. Some are only discussed briefly.
+              </p>
+
+              <p>
+                When talking about procedural room generation our objective sounds deceptively simple.
+                Place rooms in a given space. How hard can that be? Try it yourself, grab a piece of paper and a pen and fill the space with "rooms" (simple rectangles will do at this point.)
+              </p>
+
+              <p>
+                We start by placing a room randomly, and continue placing them in new locations until we're done filling the space. Doing this you probably find that you have a decent spread of rooms, and more than likely none of the rooms are touching each other or overlapping. As humans we have a tendency to follow rules subconciously. Now try the same exercise, but with a blindfold on. This is what it's like for a computer.
+              </p>
+
+              <p>
+                A computer has no concept of rooms its placed before. It will blindly and happily go about placing rooms wherever it wants. Sometimes it will get lucky and miss other rooms, but as the space fills up the chance of overlaps is almost guaranteed. In some simple cases overlapping rooms might actually be quite interesting/what you want, but could make it difficult to define unique or special places. So how can we improve this? 
+              </p>
+
+              <b>Solution 1 - Simple Try and Try again:</b>
+              <p>
+                We could go really simply - start by placing a room. Then every time we add a room, check if it
+                collides with another room. Keep on doing this until we have the amount of rooms we require/are happy with.
+              </p>
+
+              <b>Issues with this solution:</b>
+              <p>
+                If rooms are large and the space is small, the chance of overlap is very high, which will cause a lot of wasted cycles. 
+                It could take the computer several thousand attempts in some cases to place a room. 
+                We could, of course, put in failsafes for this method, like exiting early if we have too many failures. This solution is simple to implement but in the grand scheme of things is terribly inefficient the more complex the dungeon is.
+              </p>
+
+              <b>Solution 2 - Progressive Building:</b>
+              <p>
+                We could start by placing a room, then placing another one directly on a free border of the room. If we just did this with rooms we'd end up with quite a tightly packed layout, similar to that of the old Gauntlet games. 
+              </p>
+
+              <b>Issues with this solution:</b>
+              <p>
+                Like solution 1, this method also has a problem with collisions. We have to check at each stage if the border we chose is free, and then decide if we want to fallback to an alternative border or even another room entirely. We could get a random set of rooms that spiral in on themselves leaving to an issue of terminating early. It definitely has a more refined method, but I think we can do better.
+              </p>
+
+              <p>We've tried so far to place rooms randomly. I think it's time for a change of approach.</p>
+
+              <b>Solution 3 - Partitioning</b>
+              <p>
+                A third option is instead to take the space and divide it into several disjoint spaces, a process known as "partitioning". If we have a collection of disjoint spaces, we can just put one room in each space and we're done. What's better is we can guarantee that the rooms won't touch each other because the spaces are disjoint. 
+              </p>
+
+              <b>Issues with this solution:</b>
+              <p>
+                <ul>
+                  <li>
+                    We have to think of some logical way to split up the space into a disjoint set of sub-spaces.
+                  </li>
+                  <li>
+                    The way we split up the space can drastically change the appearance of the dungeon. 
+                  </li>
+                  <li>
+                      We could run into issues where a partition space is too small.
+                  </li>
+                </ul>
+              </p>
+
+              <p>As you can see, there are several solutions each with their own set of problems. The one I'd like to continue to explore is solution 3. Partitioning offers an easy way to assemble rooms into disjoint spaces.</p>
+
+              <h3 id="2">Space Partitioning &amp; BSPs</h3>
+              <p>
+              </p>
+
+
+
+          </section>
+        </div>
+
+    </body>
+
+</html>
