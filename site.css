@@ -354,7 +354,7 @@ nav .dividing-line {
   left: -16px;
 }
 
-.content {
+.timeline-content {
   padding: 20px 30px;
   background-color: white;
   position: relative;
@@ -588,10 +588,6 @@ nav .dividing-line {
   color: rgb(64, 131, 167);
 }
 
-h2 {
-  margin-top: 50px;
-}
-
 .text-container {
   max-width: 40%;
   min-width: 300px;
@@ -608,15 +604,13 @@ h5 {
   font-size: 15px;
 }
 
-h2 {
-  margin-top: 100px;
+.about-content {
+  margin: auto;
+  width: 100%;
+  text-align: center;
 }
 
-section {
-  margin-top: 50px;
-}
-
-footer {
-  margin-top: 100px;
-  display: block;
+.content {
+  padding: 50px 0px;
+  text-align: center;
 }
