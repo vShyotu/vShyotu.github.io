@@ -354,7 +354,7 @@ nav .dividing-line {
   left: -16px;
 }
 
-.content {
+.timeline-content {
   padding: 20px 30px;
   background-color: white;
   position: relative;
@@ -362,7 +362,7 @@ nav .dividing-line {
   font-size: 15px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .timeline::after {
     left: 31px;
   }
@@ -388,9 +388,7 @@ nav .dividing-line {
   .right {
     left: 0%;
   }
-}
 
-@media screen and (max-width: 800px) {
   .buttons {
     flex-direction: column;
   }
@@ -480,7 +478,7 @@ nav .dividing-line {
   opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: 0.5s ease;
 }
 
@@ -588,10 +586,6 @@ nav .dividing-line {
   color: rgb(64, 131, 167);
 }
 
-h2 {
-  margin-top: 50px;
-}
-
 .text-container {
   max-width: 40%;
   min-width: 300px;
@@ -601,7 +595,6 @@ h2 {
 }
 
 h4 {
-  margin-top: 50px;
   font-size: 18px;
 }
 
@@ -609,16 +602,19 @@ h5 {
   font-size: 15px;
 }
 
-h3,
-h2 {
-  margin-top: 100px;
+.about-content {
+  margin: auto;
+  width: 100%;
+  text-align: center;
 }
 
-section {
-  margin-top: 50px;
+.content {
+  padding: 50px 0px;
+  text-align: center;
 }
 
-footer {
-  margin-top: 100px;
-  display: block;
+.accent-text {
+  color: rgb(64, 131, 167);
+  text-align: left;
+  font-size: 16px;
 }
