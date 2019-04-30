@@ -1,0 +1,37 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#ffffff" id="canvas_background" height="202" width="302" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_67">
+   <rect stroke="#000000" id="svg_33" height="22.586265" width="168.984204" y="81.982659" x="20.934248" stroke-width="0" fill="#000000"/>
+   <path stroke="#000000" stroke-width="0" id="svg_35" d="m21.217778,80.321903l24.120059,-31.035623l124.374092,0l20.347967,30.717767l-168.842117,0.317856z" fill="#000000"/>
+  </g>
+  <text stroke="#000000" transform="matrix(10.13955020904541,0,0,1,-864.8299385309219,0) " xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="24" id="svg_38" y="156.60926" x="94.625116" stroke-width="0" fill="#000000"/>
+  <text stroke="#000000" transform="matrix(1.8293335994854516,0,0,1.7404146598150874,-186.95799120623354,-111.93946477047882) " xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_65" y="133.056387" x="208.949536" stroke-opacity="null" stroke-width="0" fill="#000000">CMS</text>
+  <rect stroke="#000000" transform="matrix(0,1.3286064706415606,-1.1073000845066787,0,256.5055376712075,-43.47681235757531) " id="svg_37" height="22.749956" width="52.249895" y="164.201584" x="96.554358" stroke-width="0" fill="#000000"/>
+  <text stroke="#000000" transform="matrix(1.3249413810047312,0,0,1.3286064706415603,-16.44072358766791,-34.72933904838308) " xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="18" id="svg_40" y="140.339878" x="70.336117" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">ABLE</text>
+  <text stroke="#000000" transform="matrix(1.3611682462596622,0,0,1.3286064706415603,-38.472241972671185,-34.72933904838308) " xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="18" id="svg_41" y="141.600747" x="145.926771" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">OP</text>
+  <path stroke="#000000" id="svg_42" d="m52.61694,72.561124c0,0 30.173866,-15.879422 30.03511,-15.967527c0.138757,0.088105 30.035798,4.711228 29.89704,4.623123c0.138758,0.088105 -30.311932,17.776576 -30.311932,17.776576c1.384122,-1.809048 -29.620217,-6.432172 -29.620217,-6.432172z" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+  <rect stroke="#000000" transform="matrix(0,1.3286064706415606,-1.1073000845066787,0,340.95013683967784,-142.1414022733261) " id="svg_43" height="22.749956" width="52.249895" y="165.201586" x="171.816072" stroke-width="0" fill="#000000"/>
+  <g stroke="null" id="svg_51">
+   <ellipse stroke="#000000" ry="2.989358" rx="2.768245" id="svg_49" cy="56.784027" cx="143.069113" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+   <path stroke="#000000" id="svg_50" d="m142.353535,56.948015c0,0 -2.2838,11.338163 -2.283804,11.33816c0.000004,0.000003 6.090138,0.198918 6.090138,0.198918c0,0 -2.093484,-11.735993 -2.093488,-11.735994" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+  </g>
+  <g stroke="null" id="svg_54">
+   <ellipse stroke="#000000" ry="2.989358" rx="2.768245" id="svg_52" cy="54.348244" cx="160.23222" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+   <path stroke="#000000" id="svg_53" d="m159.516642,54.512232c0,0 -2.283801,11.338162 -2.283804,11.33816c0.000003,0.000001 6.090138,0.198918 6.090138,0.198918c0,0 -2.093484,-11.735993 -2.093488,-11.735995" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+  </g>
+  <g stroke="null" id="svg_57">
+   <ellipse stroke="#000000" ry="2.989358" rx="2.768245" id="svg_55" cy="61.102002" cx="150.820185" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+   <path stroke="#000000" id="svg_56" d="m150.104607,61.26599c0,0 -2.2838,11.338163 -2.283804,11.33816c0.000004,0.000003 6.090138,0.198918 6.090138,0.198918c0,0 -2.093484,-11.735993 -2.093488,-11.735994" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+  </g>
+  <path stroke="#000000" id="svg_62" d="m46.249986,68.077093c0,0 30.173866,-15.879423 30.03511,-15.967527c0.138757,0.088104 30.035798,4.711228 29.89704,4.623123c0.138758,0.088105 -30.311932,17.776575 -30.311932,17.776575c1.384122,-1.809048 -29.620217,-6.432171 -29.620217,-6.432171z" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+ </g>
+</svg>

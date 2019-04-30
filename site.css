@@ -362,7 +362,7 @@ nav .dividing-line {
   font-size: 15px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .timeline::after {
     left: 31px;
   }
@@ -388,9 +388,7 @@ nav .dividing-line {
   .right {
     left: 0%;
   }
-}
 
-@media screen and (max-width: 800px) {
   .buttons {
     flex-direction: column;
   }
@@ -480,7 +478,7 @@ nav .dividing-line {
   opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: 0.5s ease;
 }
 
@@ -613,4 +611,10 @@ h5 {
 .content {
   padding: 50px 0px;
   text-align: center;
+}
+
+.accent-text {
+  color: rgb(64, 131, 167);
+  text-align: left;
+  font-size: 16px;
 }

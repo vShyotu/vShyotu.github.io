@@ -1,0 +1,26 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#35496b" id="canvas_background" height="202" width="302" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path transform="rotate(27 157.93984985351562,73.42964172363284) " id="svg_29" d="m154.874994,107.609359c0,0 3.99999,-68.24986 3.87468,-68.35944c0.12531,0.10958 2.3753,68.35944 2.24999,68.24986c0.12531,0.10958 -6.12467,0.10958 -6.12467,0.10958z" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="null" fill="#ffffff"/>
+  <path id="svg_28" d="m148.12501,89.8594c0,0 3.99999,-68.24986 3.87468,-68.35944c0.12531,0.10958 2.3753,68.35944 2.24999,68.24986c0.12531,0.10958 -6.12467,0.10958 -6.12467,0.10958z" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="null" fill="#ffffff"/>
+  <path transform="rotate(-24 144.18988037109378,72.92964172363277) " id="svg_20" d="m141.125026,107.109361c0,0 3.99999,-68.24986 3.87468,-68.35944c0.12531,0.10958 2.3753,68.35944 2.24999,68.24986c0.12531,0.10958 -6.12467,0.10958 -6.12467,0.10958z" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="null" fill="#ffffff"/>
+  <path transform="rotate(103 149.01275634765622,89.2846450805664) " id="svg_19" d="m176.499983,115.937447c0,-1 -61,-53 -61.5,-53.4375c0.5,0.4375 68.5,49.4375 68,49c0.5,0.4375 -6.5,5.4375 -6.5,4.4375z" stroke-opacity="null" stroke-width="0" stroke="null" fill="#ffffff"/>
+  <path transform="rotate(-111 138.74998474121094,85.22855377197267) " stroke="null" id="svg_18" d="m117.749976,103.849898c0,0 42,-42.41243 42,-42.41243c0,0 -31.5,47.91034 -32.15625,47.56672c0.65625,0.34362 -9.84375,-5.15429 -9.84375,-5.15429z" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+  <ellipse stroke="null" ry="11" rx="10" id="svg_16" cy="85.687475" cx="151.999999" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+  <path transform="rotate(30 165.75001525878903,82.97856140136722) " stroke="null" id="svg_14" d="m144.750013,101.599898c0,0 42,-42.41243 42,-42.41243c0,0 -31.5,47.91034 -32.15625,47.56672c0.65625,0.34362 -9.84375,-5.15429 -9.84375,-5.15429z" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+  <path id="svg_13" d="m185.499963,118.187441c0,-1 -61,-53 -61.5,-53.4375c0.5,0.4375 68.5,49.4375 68,49c0.5,0.4375 -6.5,5.4375 -6.5,4.4375z" stroke-opacity="null" stroke-width="0" stroke="null" fill="#ffffff"/>
+  <ellipse stroke="#000" ry="90" rx="94" id="svg_4" cy="174.249973" cx="152.000002" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+  <ellipse ry="90" rx="94" id="svg_5" cy="181.249973" cx="152.000002" stroke-width="0" fill="#35496b"/>
+  <text font-weight="normal" xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="12" id="svg_22" y="122.852341" x="132.929762" stroke-width="0" fill="#ffffff">Project</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="24" id="svg_23" y="148.361509" x="109.859454" stroke-width="0" fill="#ffffff">Arclight</text>
+  <rect stroke="null" id="svg_27" height="0.749994" width="86.499825" y="127.124893" x="106.750085" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+ </g>
+</svg>
