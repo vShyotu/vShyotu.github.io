@@ -25,19 +25,27 @@ function showRole(roleElement, roleBtn) {
 
 function createRoleSection(skills) {
   var sectionHtml = "";
-  skills.forEach(element => sectionHtml += createSkillsSection(element.title, element.skills));
+  skills.forEach(
+    element =>
+      (sectionHtml += createSkillsSection(element.title, element.skills))
+  );
   return sectionHtml;
 }
 
 function createSkillsSection(title, skills) {
-  var sectionHtml = "<h3>" + title + "</h3>";
+  var sectionHtml = "<h5>" + title + "</h5>";
 
   for (var i = 0; i < skills.length; i++) {
-    sectionHtml += `
+    sectionHtml +=
+      `
     <div class="gauge-container">
-      <span class="gauge-label">` + skills[i].label + `</span>
+      <span class="gauge-label">` +
+      skills[i].label +
+      `</span>
       <div class="gauge">
-        <div class="gauge-fill" style="width:` + skills[i].percent + `%"></div>
+        <div class="gauge-fill" style="width:` +
+      skills[i].percent +
+      `%"></div>
       </div>
     </div>`;
   }
@@ -47,6 +55,11 @@ function createSkillsSection(title, skills) {
 
 function toggleTimeline() {
   timelineSection.slideToggle();
+}
+
+function collapseTimeline() {
+  timelineSection.slideToggle();
+  timelineToggleArrow.removeClass().addClass("black arrow-down");
 }
 
 const webdevRoleElement = $("#webdev-role");
@@ -64,54 +77,61 @@ const roles = $(".role-info-container");
 const roleBtns = $(".role-btn");
 
 const frontEndSkills = [
-  {label:"HTML", percent: 80},
-  {label:"CSS", percent: 70},
-  {label:"JS", percent: 50},
-  {label:"jQuery", percent: 30},
-  {label:"React", percent: 30},
+  { label: "HTML(5)", percent: 80 },
+  { label: "CSS/SCSS", percent: 70 },
+  { label: "JavaScript", percent: 50 },
+  { label: "jQuery", percent: 40 },
+  { label: "React", percent: 30 },
+  { label: "Vue.js", percent: 20 }
 ];
 
 const backEndSkills = [
-  {label:"C#", percent: 90},
-  {label:".NET", percent: 40},
-  {label:".NET Core", percent: 30},
-  {label:"EF", percent: 20},
-  {label:"Node.js", percent: 30},
-  {label:"SQL", percent: 40},
-  {label:"Java", percent: 30}
+  { label: "C#", percent: 90 },
+  { label: ".NET", percent: 40 },
+  { label: ".NET Core", percent: 30 },
+  { label: "EF", percent: 20 },
+  { label: "Node.js", percent: 30 },
+  { label: "SQL", percent: 40 },
+  { label: "Java", percent: 20 }
 ];
 
 const gameDevTechSkills = [
-  {label:"C#", percent: 80},
-  {label:"C++", percent: 80},
-  {label:"Unity", percent: 70},
-  {label:"Unreal Engine", percent: 10},
-  {label:"Java", percent: 20},
+  { label: "C#", percent: 80 },
+  { label: "C++", percent: 80 },
+  { label: "Unity", percent: 70 },
+  { label: "Unreal Engine", percent: 10 },
+  { label: "Java", percent: 20 }
 ];
 
 const gameDevAreaSkills = [
-  {label:"Gameplay", percent: 90},
-  {label:"Physics", percent: 90},
-  {label:"AI", percent: 60},
-  {label:"Sound", percent: 20},
-  {label:"Graphics", percent: 80},
-  {label:"UI", percent: 80},
-  {label:"Networking", percent: 20}
+  { label: "Gameplay", percent: 90 },
+  { label: "Physics", percent: 90 },
+  { label: "AI", percent: 60 },
+  { label: "Sound", percent: 20 },
+  { label: "Graphics", percent: 80 },
+  { label: "UI", percent: 80 },
+  { label: "Networking", percent: 20 }
 ];
 
 const artistToolSkills = [
-  {label:"Photoshop", percent: 80},
-  {label:"Krita", percent: 90},
-  {label:"Blender", percent: 90},
-  {label:"3ds Max", percent: 50},
-  {label:"Maya", percent: 50},
-  {label:"zBrush", percent: 20},
-  {label:"Unity", percent: 70},
+  { label: "Photoshop", percent: 80 },
+  { label: "Krita", percent: 90 },
+  { label: "Blender", percent: 90 },
+  { label: "3ds Max", percent: 50 },
+  { label: "Maya", percent: 50 },
+  { label: "zBrush", percent: 20 },
+  { label: "Unity", percent: 70 }
 ];
 
-const webDevSkills = [{title: "Front End", skills: frontEndSkills}, {title: "Back End", skills: backEndSkills}];
-const gameDevSkills = [{title: "Tech", skills: gameDevTechSkills}, {title: "Areas", skills: gameDevAreaSkills}];
-const artistSkills = [{title: "Tools", skills: artistToolSkills}];
+const webDevSkills = [
+  { title: "Front End", skills: frontEndSkills },
+  { title: "Back End", skills: backEndSkills }
+];
+const gameDevSkills = [
+  { title: "Tech", skills: gameDevTechSkills },
+  { title: "Areas", skills: gameDevAreaSkills }
+];
+const artistSkills = [{ title: "Tools", skills: artistToolSkills }];
 
 const webDevRoleSectionHtml = createRoleSection(webDevSkills);
 const gameDevRoleSectionHtml = createRoleSection(gameDevSkills);
@@ -121,43 +141,27 @@ $("#webdev-skill-container").html(webDevRoleSectionHtml);
 $("#gamedev-skill-container").html(gameDevRoleSectionHtml);
 $("#artist-skill-container").html(artistRoleSectionHtml);
 
-timelineToggleArrow.click(
-  function(){
-    timelineToggleArrow.toggleClass("arrow-down").toggleClass("arrow-up");
-  }
-);
+timelineToggleArrow.click(function() {
+  timelineToggleArrow.toggleClass("arrow-down").toggleClass("arrow-up");
+});
 
-webdevRoleBtnElement.click(
-  function() {
-    if (webdevRoleElement.is(":visible"))
-      collapseRoles();
-    else
-      showRole(webdevRoleElement, webdevRoleBtnElement);
-  }
-);
+webdevRoleBtnElement.click(function() {
+  if (webdevRoleElement.is(":visible")) collapseRoles();
+  else showRole(webdevRoleElement, webdevRoleBtnElement);
+});
 
-gamedevRoleBtnElement.click(
-  function() {
-    if (gamedevRoleElement.is(":visible"))
-      collapseRoles();
-    else
-      showRole(gamedevRoleElement, gamedevRoleBtnElement);
-  }
-);
+gamedevRoleBtnElement.click(function() {
+  if (gamedevRoleElement.is(":visible")) collapseRoles();
+  else showRole(gamedevRoleElement, gamedevRoleBtnElement);
+});
 
-artistRoleBtnElement.click(
-  function() {
-    if (artistRoleElement.is(":visible"))
-      collapseRoles();
-    else
-      showRole(artistRoleElement, artistRoleBtnElement);
-  }
-);
+artistRoleBtnElement.click(function() {
+  if (artistRoleElement.is(":visible")) collapseRoles();
+  else showRole(artistRoleElement, artistRoleBtnElement);
+});
 
-$(".collapse-role").click(
-  function() {
-    collapseRoles();
-  }
-)
+$(".collapse-role").click(function() {
+  collapseRoles();
+});
 
 onStart();
