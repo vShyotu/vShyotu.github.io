@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Grant Hardman - Projects</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      rel="stylesheet"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link href="fonts.css" rel="stylesheet" type="text/css" />
     <link href="site.css" rel="stylesheet" type="text/css" />
   </head>
@@ -26,28 +32,55 @@
     </header>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <h3>Game Development</h3>
-      <ul>
-        <li><a href="./projects/quiksort.html">Quiksort</a></li>
-        <li><a href="#">Project Arclight</a></li>
-        <li><a href="#">Project Dawnstar</a></li>
-      </ul>
-      <h3>Web Development</h3>
-      <ul>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Project Tabletop</a></li>
-        <li><a href="#">Issue Tracker REST API</a></li>
-        <li><a href="#">Simple CRUD Sample - .NET with EF</a></li>
-      </ul>
-      <h3>Game Artist</h3>
-      <ul>
-        <li><a href="#">Project Arclight</a></li>
-      </ul>
+      <div class="content">
+        <h2>Projects</h2>
+        <div class="title-divider"></div>
+
+        <label for="filterProjectsBy"><strong>Filter By:</strong></label>
+        <select id="filterProjectsBy" name="filterProjectsBy">
+          <option value="0">All</option>
+          <option value="1">Game Development</option>
+          <option value="2">Web Development</option>
+          <option value="3">Game Art</option>
+        </select>
+
+        <button>Filter</button>
+      </div>
+
+      <div class="inset-container">
+        <div class="tile-container">
+          <div class="tile-grid" id="project-tile-grid"></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h3>Game Development</h3>
+        <ul>
+          <li><a href="./projects/quiksort.html">Quiksort</a></li>
+          <li><a href="#">Project Arclight</a></li>
+          <li><a href="#">Project Dawnstar</a></li>
+        </ul>
+
+        <h3>Web Development</h3>
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Project Tabletop</a></li>
+          <li><a href="#">Issue Tracker REST API</a></li>
+          <li><a href="#">Simple CRUD Sample - .NET with EF</a></li>
+        </ul>
+
+        <h3>Game Artist</h3>
+        <ul>
+          <li><a href="#">Project Arclight</a></li>
+        </ul>
+      </div>
     </section>
 
     <footer>
       &copy; 2019 - Grant Hardman
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="projects.js"></script>
   </body>
 </html>
